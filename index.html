@@ -1,100 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Souhail Chakkour</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souhail Chakkour | Cybersecurity Researcher</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0d1117;
-            color: white;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px;
-        }
+    header {
+      padding: 80px 10%;
+      background: linear-gradient(135deg, #0b1020, #111827, #0f172a);
+    }
 
-        h1 {
-            font-size: 3rem;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px;
+    }
 
-        h2 {
-            color: #58a6ff;
-        }
+    nav h2 { color: #38bdf8; }
 
-        .card {
-            background: #161b22;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 20px;
+    }
 
-        a {
-            color: #58a6ff;
-        }
-    </style>
+    .hero h1 {
+      font-size: 3.5rem;
+      color: white;
+    }
+
+    .hero h1 span { color: #38bdf8; }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 15px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: bold;
+    }
+
+    .buttons a.secondary {
+      background: transparent;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      padding: 25px;
+      border-radius: 14px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    a { color: #38bdf8; }
+
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 2.4rem; }
+      nav { flex-direction: column; align-items: flex-start; }
+      nav div { margin-top: 15px; }
+      nav a { margin-left: 0; margin-right: 15px; }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="container">
+<header>
+  <nav>
+    <h2>Souhail Chakkour</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <h1>Souhail Chakkour</h1>
-
+  <div class="hero">
+    <h1>Cybersecurity Researcher & <span>Computer Science Graduate Student</span></h1>
     <p>
-        Computer Science Graduate Student at Mississippi State University.
-        Researching Software Defined Networking, Moving Target Defense,
-        Cybersecurity, and Machine Learning.
+      I am a Computer Science graduate student at Mississippi State University,
+      focused on cybersecurity, software-defined networking, moving target defense,
+      vulnerability detection, and network systems research.
     </p>
 
+    <div class="buttons">
+      <a href="#projects">View Projects</a>
+      <a href="#contact" class="secondary">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am a cybersecurity and computer science researcher interested in building
+    secure, resilient, and adaptive network systems. My work includes SDN-based
+    Moving Target Defense, CPAM, Ryu/Mininet experimentation, and machine learning
+    approaches for vulnerability detection.
+  </p>
+</section>
+
+<section id="research">
+  <h2 class="section-title">Research Interests</h2>
+
+  <div class="grid">
     <div class="card">
-        <h2>About Me</h2>
-        <p>
-            Master's student at Mississippi State University with a focus on
-            cybersecurity, networking, and systems research.
-        </p>
+      <h3>Moving Target Defense</h3>
+      <p>
+        Researching adaptive network defense techniques that dynamically change
+        attack surfaces while preserving communication continuity.
+      </p>
     </div>
 
     <div class="card">
-        <h2>Projects</h2>
-
-        <h3>CPAM: SDN Moving Target Defense</h3>
-        <p>
-            Continuity-Preserving Address Mutation using Ryu and Mininet.
-        </p>
-
-        <h3>JavaBERT Vulnerability Detection</h3>
-        <p>
-            Machine learning model for Java vulnerability classification.
-        </p>
+      <h3>Software-Defined Networking</h3>
+      <p>
+        Building and evaluating SDN security mechanisms using Ryu, OpenFlow,
+        and Mininet-based network emulation.
+      </p>
     </div>
 
     <div class="card">
-        <h2>Skills</h2>
+      <h3>Vulnerability Detection</h3>
+      <p>
+        Exploring machine learning and transformer-based models for detecting
+        vulnerabilities in source code.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <p>
-            Python • Java • C++ • Linux • Ryu • Mininet • Wireshark • Git
-        </p>
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>CPAM: SDN Moving Target Defense</h3>
+      <p>
+        Continuity-Preserving Address Mutation system using Ryu and Mininet.
+        The project focuses on dynamic VIP assignment, NAT-based communication,
+        session tracking, and defense against reconnaissance.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">Ryu</span>
+      <span class="tag">Mininet</span>
+      <span class="tag">SDN</span>
     </div>
 
     <div class="card">
-        <h2>Contact</h2>
-
-        <p>Email: lordsouhail2003@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/SouhailChakk" target="_blank">
-                github.com/SouhailChakk
-            </a>
-        </p>
+      <h3>JavaBERT Vulnerability Detection</h3>
+      <p>
+        Machine learning project using JavaBERT for binary and multi-label
+        vulnerability classification on Java source code.
+      </p>
+      <span class="tag">Java</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Security</span>
     </div>
 
-</div>
+    <div class="card">
+      <h3>TLS 1.3 Security Analysis</h3>
+      <p>
+        Research paper analyzing TLS 1.3 improvements, handshake design,
+        cipher suites, and security advantages compared to TLS 1.2.
+      </p>
+      <span class="tag">Network Security</span>
+      <span class="tag">TLS</span>
+    </div>
+
+    <div class="card">
+      <h3>DDoS Attacks and Countermeasures</h3>
+      <p>
+        Survey of DoS/DDoS attack techniques and defensive mechanisms,
+        including detection, mitigation, and network-layer protection.
+      </p>
+      <span class="tag">Cybersecurity</span>
+      <span class="tag">Networks</span>
+    </div>
+
+    <div class="card">
+      <h3>CTF & Security Labs</h3>
+      <p>
+        Hands-on security practice involving reverse engineering, web security,
+        steganography, binary exploitation, OSINT, and forensics.
+      </p>
+      <span class="tag">CTF</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Ghidra</span>
+      <span class="tag">Burp Suite</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <p>
+    <span class="tag">Python</span>
+    <span class="tag">Java</span>
+    <span class="tag">C++</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Git</span>
+    <span class="tag">Ryu</span>
+    <span class="tag">Mininet</span>
+    <span class="tag">Wireshark</span>
+    <span class="tag">OpenFlow</span>
+    <span class="tag">Cybersecurity</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Network Security</span>
+  </p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <p>Email: <a href="mailto:lordsouhail2003@gmail.com">lordsouhail2003@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/SouhailChakk" target="_blank">github.com/SouhailChakk</a></p>
+  <p>Website: <a href="https://souhailchakkour.com" target="_blank">souhailchakkour.com</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Souhail Chakkour. Built with GitHub Pages.</p>
+</footer>
 
 </body>
 </html>
